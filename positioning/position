@@ -1,0 +1,25 @@
+position: static | fixed | absolute | relative
+
+position: static
+default
+browsers calculate the box position based on the document flow
+elements render in order, as they appear in the document flow
+
+position: fixed
+needs coordinates top & left or right & bottom
+The element is positioned in relation to the viewing window, not document 
+When the page scolls down, the box will still in the viewing window
+
+position: relative
+needs coordinates top & left or right & bottom
+The element is positioned in relation to itself, shift the element top & left or right & bottom  
+
+position: absolute
+needs coordinates top & left or right & bottom
+The element is positioned relative to its first or nearest positioned (not static) ancestor element
+Remove it from the document flow so it does not affect other elements that are rendered
+
+cases:
+1. overlapping elements: fixed | absoute
+2. need coordinates, able to position: fixed, relative, absolute
+3. two boxes are next to each other, the margins will collapsed

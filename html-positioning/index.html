@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Positioning</title>
+    <style type="text/css">
+      /* Use the new box model */
+      /* Word of Caution: this is a SLOW selector, use sparingly */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding:0;
+      }
+      
+      /* position: static | fixed | absolute | relative */
+      /* position: static */
+      /* default, browsers calculate the box position from top, left, right, to bottom */
+      /* Elements render in order, as they appear in the document flow */
+      
+      .box {
+        margin: 20px;
+        padding: 20px;
+        border: 5px solid #000;
+        background: #f00;
+      }
+
+      /* position: fixed */
+      /* The element is positioned relative to the browser window */
+      /* must have top & left and right & bottom properties */
+      .box-alt {
+        background: #00f;
+        
+        position: fixed;
+        top: 10px;
+        left: 50px;
+        /* right: 0;*/
+        /* bottom: 0; */
+        margin: 0;
+        width: 80%;
+      }
+
+      /* position: absolute */
+      /* The element is positioned relative to its first positioned (not static) ancestor element */
+      /* must have top & left and right & bottom properties */
+      .box-alt2 {
+        background: #0f0;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        /*right: 50px;*/
+        /*bottom: 10px;*/
+        width: 200px;
+      }
+
+      /* position: relative */
+      /* The element is positioned relative to its normal position based on 
+         the last parent position */
+      /* must have top & left and right & bottom properties */
+      .box-alt3 {
+        background: #888;
+        position: relative;
+        top: 10px;
+        left: 50px;
+        /*right: 50px;*/
+        /*bottom: 10px;*/
+        width: 200px;
+      }     
+
+      .box-alt4 {
+        background: peachpuff;
+        position: relative;
+        top: 10px;
+        left: 150px;
+        /*right: 50px;*/
+        /*bottom: 10px;*/
+        width: 200px;
+      }       
+    </style>
+  </head>
+ 
+  <body>
+    <!-- based on document -->
+    <!--
+    <div class="box">
+      Red box has default position: static<br/>Browsers calculate the box position from top left to right to bottom.<br/>
+    </div>
+    
+    <div class="box">
+      Red box 2 has default position: static <br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sunt eos, unde praesentium officiis! Aut officia delectus quam ut eveniet modi unde rerum at non voluptate, ipsam totam repellendus reiciendis?
+    </div>
+    
+    <div class="box-alt">
+      Blue box has position: fixed, top: 0px, left: 0px<br/>locate at top: 0, left:0
+    </div>  
+    
+    <div class="box-alt2">
+      Green box has position: absolute, top: 10px, left: 10px<br/>
+    </div>  
+    
+    <div class="box-alt3">
+      Gray box has position: relative, top: 10px, left: 50px<br/> 
+      Gray box is relative to red box 2.
+    </div>  
+    
+    <div class="box-alt4">
+        this peachpuff box has default position: relative<br/>
+        relative to  gray box  <br/>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sunt eos, unde praesentium officiis! Aut officia delectus quam ut eveniet modi unde rerum at non voluptate, ipsam totam repellendus reiciendis?
+
+        <div class="box-alt2">
+          this green box has default position: absolute
+          this green box is inside of peachpuff box, so is referenced to peachpuff box
+          meaning shift 20px from top and 50px from left from peachpuff box 
+        </div>
+    </div>
+    -->
+
+    <div class="box">
+      position: static
+      red box 3<br/>
+      
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sunt eos, unde praesentium officiis! Aut officia delectus quam ut eveniet modi unde rerum at non voluptate, ipsam totam repellendus reiciendis?<br/>
+
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sunt eos, unde praesentium officiis! Aut officia delectus quam ut eveniet modi unde rerum at non voluptate, ipsam totam repellendus reiciendis?<br/>
+
+      <div class="box-alt4">
+      position: relative<br/>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sunt eos, unde praesentium officiis! Aut officia delectus quam ut eveniet modi unde rerum at non voluptate, ipsam totam repellendus reiciendis?
+      <div class="box-alt2">
+          position: absoulte
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sunt eos, unde praesentium officiis! Aut officia delectus quam ut eveniet modi unde rerum at non voluptate, ipsam totam repellendus reiciendis?<br/>
+        </div>
+      </div>
+      
+      <div class="box-alt">
+      position: fixed<br/>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sunt eos, unde praesentium officiis! Aut officia delectus quam ut eveniet modi unde rerum at non voluptate, ipsam totam repellendus reiciendis?<br/>
+        <div class="box-alt2">
+          position: absoulte
+          this box is inside the fixed box, so is referenced to the top & left of blue box 
+        </div>
+      </div>
+    </div>
+
+    <<div class="box">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sunt eos, unde praesentium officiis! Aut officia delectus quam ut eveniet modi unde rerum at non voluptate, ipsam totam repellendus reiciendis?
+    </div>
+  </body>
+</html>

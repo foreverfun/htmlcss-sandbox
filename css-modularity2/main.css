@@ -1,0 +1,173 @@
+/* ADD YOUR STYLES HERE */
+/* horizontally spaced */
+.hs1 {
+	display:inline-block;	
+	width:100%;
+	text-align:center;
+}
+
+.hs1-item {
+	padding:20px;
+}
+
+.hs2 {
+	padding-left:20px;
+	display:inline-block;
+}
+
+.hs2-item {
+	display:inline-block;
+	vertical-align:top;
+	padding-left:30px;
+}
+
+/* vertically spaced */
+.vs1 {
+	display: block;
+	height:400px;
+}
+
+.vs1-item {
+	padding-top: 150px;
+}
+
+.hl {
+	display: inline-block;
+	margin-left:0;
+}	
+
+.btn-g a {
+	text-decoration: none;
+	color: white;
+}
+
+.btn-g {
+	display: inline-block;
+	background-color: #ed828a;
+	border-radius: 5px;
+}
+
+.btn-size-l {
+	padding: 20px 60px 20px 60px;
+	font-size: 20px;
+}
+
+.btn-size-m {
+	padding: 10px 30px 10px 30px;
+	font-size: 15px;
+}
+
+.btn-size-s {
+	padding: 3px 10px 3px 10px;
+	font-size: 10px;
+}
+
+.btn-type-a {
+	padding: 10px 20px 10px 20px;
+}
+
+.btn-type-b {
+	background-color: #ed828a;
+	color: white;
+	border:none;
+}
+
+.btn-type-c {
+	padding: 0px 20px 0px 20px;
+}
+
+.navigation li {
+	display:inline-block;
+	background-color:#ed828a;
+	padding-right: 50px;
+	
+}
+
+.navigation {
+	display: block;
+	background-color: #ed828a;
+	width: 80%;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navigation a {
+	color:white;
+	text-decoration:none;
+}
+.navigation a:hover {
+	color:black;
+}
+
+.pagination li{
+	display:inline-block;
+	color: #ed828a;
+	margin-right: 10px;
+	padding:10px;
+	border-bottom:2px solid #ed828a;
+}
+
+.pagination li:first-child {
+	padding-right: 20px;
+	border-bottom:none;
+}
+
+.pagination li:last-child {
+	padding-left: 20px;
+	border-bottom:none;
+}
+
+.pagination a {
+	color:#ed828a;
+	text-decoration:none;
+
+}
+
+/* learn float*/
+.cs1 {
+  	float:left;
+  	padding-right:10px;
+}
+
+.cs2 {
+
+	clear:both;
+	margin-top:60px;
+}
+
+.cs3 {
+	position:absolute;
+}
+
+
+.timestamp-format {
+	color:gray;
+	font-size:x-small;
+}
+
+.tab {
+
+}
+
+.tab li{
+	display:inline-block;
+	border: 1px solid #A7AADF;
+	border-bottom:none;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+.tab-bottom {
+	border: 1px solid #A7AADF;
+	border-radius:10px;
+	padding: 10px;
+}
+
+.tab a {
+	text-decoration:none;
+}
+
+
+

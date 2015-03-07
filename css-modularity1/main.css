@@ -1,0 +1,127 @@
+/* ADD YOUR STYLES HERE */
+/*============================================*/
+/* Data Table */
+
+.datatable {
+	width:100%;	
+}
+
+.datatable tr {
+	border-bottom:2px solid #d3d3d3;
+}	
+
+.datatable tr:last-child{
+	border-bottom-style:none;
+}
+
+.datatable th, .datatable td {
+	padding: 10px;
+}
+
+
+/*============================================*/
+/* Stats */
+.stats {
+	font-size: 2.4em;
+	
+	width: 90px;
+}
+
+.stats tr:first-child {
+	border-top: 2px solid #d3d3d3;
+}
+
+.stats tr:last-child {
+	border-bottom: 2px solid #d3d3d3;
+}
+
+.stats td {
+	padding: 20px;
+}
+
+.stats-bold {
+	font-weight: bold;
+}
+
+.stats-small {
+	font-size: small;
+	color: #b5b5b5;
+}
+
+/*============================================*/
+/* Bar Chart */
+
+.barchart {
+	width:98%;	
+}
+
+.barchart tr {
+	border: none;
+}
+
+.barchart th {
+	width: 100px;
+	height: 5px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.barchart td {
+	color:white;
+}
+
+.barchart div {
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+	background-color:#599ede;
+	padding: 5px;
+}
+
+
+/*============================================*/
+/* Lightbox */
+.lightbox-outside {
+	height:500px;
+  	background-color: gray;
+  	position: relative;
+	
+}
+
+.lightbox-inside {
+	padding: 50px;
+	width: 300px;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius:10px;
+}
+
+
+.lightbox-text {
+}
+
+/*============================================*/
+/* Media Block */
+.media-block-g {
+	display:inline-block;
+}
+
+.media-block-1 {
+	float:left;
+	padding-right: 10px;
+}
+
+.media-block-2 {
+	display:inline-block;
+}
+
+.media-block-4 {
+	display:inline-block;
+}
+
